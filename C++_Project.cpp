@@ -4,14 +4,14 @@
 
 class Account {
     private:
-    int accountNo;
-    char name[20];
-    int deposit;
+	int accountNo;
+	char name[20];
+	int deposit;
     char mail[20];
     int password;
     int admpass;
     
-    public:
+	public:
     int create_account(int accountNo){
     	this->accountNo = accountNo;
     	std::cout<<"\n\nEnter Your Name : ";
@@ -30,7 +30,7 @@ class Account {
 		else{ 
 			return 2;
 		}	
-    }
+	}
   
    	void show_account() const{                 
    		std::cout<<"\nAccount No. : "<<accountNo;      
@@ -54,7 +54,7 @@ class Account {
 		if(deposit>=1000){ 
 			return 1;
 		}	
-    	        else{
+    	else{
 			return 2;
 		}	
 	}	    
@@ -67,11 +67,11 @@ class Account {
 		deposit-=z; 
 	}
            		    
-        int retacc() const{ 
+    int retacc() const{ 
 	   return password; 
 	}
    
-        int retac()const { 
+    int retac()const { 
 	   return accountNo;
 	}
     
@@ -264,7 +264,7 @@ void deposit_withdraw(int n ,int n2 , int option) {
 			}
 		}
 	}
-        File.close();
+    File.close();
 	if(found==false){
 		std::cout<<"\n\n Account Not Found ";
 	}	
@@ -281,8 +281,8 @@ int main() {
 		std::cout<<"\n\n03. Withdrawl Cash.          ";
 		std::cout<<"\n\n04. Account Balance Enquiry. ";
 		std::cout<<"\n\n05. Modify/Edit An Account.  ";
-	        std::cout<<"\n\n06. Accounts Holders Details (* Admin Access Only). ";
-	        std::cout<<"\n\n07. Close/Delete Your Account.       ";
+	    std::cout<<"\n\n06. Accounts Holders Details (* Admin Access Only). ";
+	    std::cout<<"\n\n07. Close/Delete Your Account.       ";
 		std::cout<<"\n\n08. Exit From Banking Menu.  ";
 		std::cout<<"\n\nPlease Select Your Option. : ";
 		std::cin>>ch;
